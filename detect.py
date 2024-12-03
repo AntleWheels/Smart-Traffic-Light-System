@@ -61,7 +61,7 @@ while True:
     print("Total number of cars near the Junction :",(north+south+east+west))
     cars_count =[north,south,east,west]
     sorting =sorted(cars_count)
-    print(f"Please give the 'Green' signal at {sorting[-1]} direction")
+    print(f"Please give the 'Green' signal at {sorting[-1]} direction {"For 120 seconds" if sorting[-1] >=120 else "For 30 seconds"}")
     print(f"Please give the 'Yellow' signal at {sorting[-2]} direction")
     print(f"Please give the 'Red' signal at {sorting[-3]} direction")
     print(f"Please give the 'Red' signal at {sorting[-4]} direction")
